@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雞煲王 台中總店 | 一鍋兩吃</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-cream': '#F6F3E6',
+                        'pot-brown': '#3E2A23',
+                        'chili-red': '#D63031',
+                        'flame-orange': '#E17055',
+                        'ig-pink': '#E4405F'
+                    },
+                    fontFamily: {
+                        'serif': ['"Noto Serif TC"', 'serif'],
+                        'sans': ['"Noto Sans TC"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-bg-cream text-pot-brown font-sans selection:bg-flame-orange selection:text-white">
+
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center sticky top-0 bg-bg-cream/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="text-2xl font-serif font-black tracking-widest text-chili-red flex items-center gap-2">
+            <span class="text-3xl">🍲</span> 雞煲王
+        </div>
+        <div class="hidden md:flex space-x-8 font-bold text-lg">
+            <a href="#about" class="hover:text-chili-red transition">首頁視覺</a>
+            <a href="#menu" class="hover:text-chili-red transition">精選菜單</a>
+            <a href="#info" class="hover:text-chili-red transition">門市資訊</a>
+        </div>
+        <a href="tel:04-2451-5858" class="bg-pot-brown text-bg-cream px-6 py-2 rounded-full font-bold hover:bg-chili-red transition shadow-md">
+            立即訂位
+        </a>
+    </nav>
+
+    <section id="about" class="container mx-auto px-6 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center">
+        <div class="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mt-10 md:mt-0">
+            <h2 class="text-xl md:text-2xl font-bold mb-3 tracking-widest text-flame-orange border-b-2 border-flame-orange pb-1 inline-block">台中總店</h2>
+            <h1 class="text-5xl md:text-7xl font-serif font-black leading-tight mb-6">
+                秘製醬料 <br> 
+                <span class="text-chili-red drop-shadow-md">一鍋兩吃</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 font-medium leading-relaxed bg-white/50 p-4 rounded-xl shadow-sm border border-pot-brown/10">
+                乾鍋下飯也下酒，加湯加料吃火鍋。<br>
+                每一口都是濃郁的極致享受！
+            </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="logo.jpg" alt="雞煲王 Logo" class="w-full max-w-md drop-shadow-2xl hover:scale-105 transition duration-500">
+        </div>
+    </section>
+
+    <section id="menu" class="bg-white py-16 border-t-4 border-pot-brown border-dashed">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif font-black text-chili-red mb-2 text-center w-full">人氣推薦菜單</h2>
+            <p class="text-lg text-gray-600 font-bold mb-10 text-center w-full">Signature Menu</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
+                <div class="bg-bg-cream p-8 rounded-2xl shadow-lg border-2 border-pot-brown/20 relative">
+                    <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-pot-brown pb-2">🔥 招牌乾鍋</h3>
+                    <ul class="space-y-4 font-bold text-lg">
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>香雞煲</span> <span class="text-chili-red">$460</span></li>
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>排骨煲</span> <span class="text-chili-red">$420</span></li>
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>海陸煲</span> <span class="text-chili-red">$860</span></li>
+                    </ul>
+                </div>
+                <div class="bg-bg-cream p-8 rounded-2xl shadow-lg border-2 border-pot-brown/20">
+                    <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-pot-brown pb-2">🍲 薑餅系列</h3>
+                    <ul class="space-y-4 font-bold text-lg">
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>薑餅雞</span> <span class="text-chili-red">$460</span></li>
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>薑餅排骨</span> <span class="text-chili-red">$420</span></li>
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>薑餅米血</span> <span class="text-chili-red">$320</span></li>
+                    </ul>
+                </div>
+                <div class="bg-bg-cream p-8 rounded-2xl shadow-lg border-2 border-pot-brown/20">
+                    <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-pot-brown pb-2">🍻 風味與燒烤</h3>
+                    <ul class="space-y-4 font-bold text-lg">
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>馬告剁椒魚</span> <span class="text-chili-red">$520</span></li>
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>鹽烤泉水魚</span> <span class="text-chili-red">$460</span></li>
+                        <li class="flex justify-between border-b border-gray-300 pb-1"><span>酥骨豬腳</span> <span class="text-chili-red">$460</span></li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="openMenu()" class="border-2 border-chili-red text-chili-red px-8 py-3 rounded-full font-bold hover:bg-chili-red hover:text-white transition duration-300">
+                查看完整菜單 (View Full Menu)
+            </button>
+        </div>
+    </section>
+
+    <footer id="info" class="bg-pot-brown text-bg-cream pt-16">
+        <div class="container mx-auto px-6 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <h4 class="text-4xl font-serif font-black text-flame-orange">門市資訊</h4>
+                    <div class="space-y-6 text-xl font-bold text-white">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">📍</span>
+                            <p class="opacity-95 leading-relaxed">臺中市西屯區青海路二段568號</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">📞</span>
+                            <p class="opacity-95">04-2451-5858</p>
+                        </div>
+                        <div class="flex flex-col gap-4 pt-2">
+                            <a href="https://www.facebook.com/jibaoking/" target="_blank" class="inline-flex items-center gap-3 bg-[#1877F2] text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg w-fit">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                <span>追蹤臉書最新消息</span>
+                            </a>
+                            <a href="https://www.instagram.com/jibaoking/" target="_blank" class="inline-flex items-center gap-3 bg-ig-pink text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition shadow-lg w-fit">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c.796 0 1.441.645 1.441 1.44s-.645 1.44-1.441 1.44c-.795 0-1.439-.645-1.439-1.44s.644-1.44 1.439-1.44z"/></svg>
+                                <span>看更多美味照片</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4 text-white">
+                    <h4 class="text-2xl font-serif font-bold text-flame-orange border-b border-white/20 pb-2">營業時間</h4>
+                    <div class="text-xl font-bold space-y-2">
+                        <p class="opacity-95 font-black">二~日 17:30 - 00:00</p>
+                        <p class="text-red-400 font-black">每週一固定公休</p>
+                        <p class="text-flame-orange text-base mt-4 italic">⚠️ 23:00 後不提供內用，僅供外帶</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full bg-pot-brown pt-20"> <div class="relative w-full overflow-hidden">
+                <div class="absolute inset-x-0 top-0 bg-gradient-to-b from-pot-brown to-transparent h-20 z-10"></div>
+                
+                <img src="footer-bg.jpg" 
+                     alt="雞煲王 營業資訊" 
+                     class="w-full h-[350px] object-cover object-top shadow-inner">
+            </div>
+        </div>
+    </footer>
+
+    <div id="menuModal" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-2xl relative p-6 text-center">
+            <button onclick="closeMenu()" class="absolute top-4 right-4 text-4xl font-bold text-gray-500 hover:text-chili-red">×</button>
+            <h2 class="text-3xl font-serif font-black text-chili-red mb-6">完整菜單</h2>
+            <img src="menu.jpg" alt="完整菜單" class="mx-auto w-full h-auto shadow-lg">
+        </div>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById('menuModal').classList.remove('hidden');
+            document.getElementById('menuModal').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
+            document.getElementById('menuModal').classList.add('hidden');
+            document.getElementById('menuModal').classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
